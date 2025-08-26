@@ -1,4 +1,3 @@
-from functools import update_wrapper
 import random
 
 lowerBound = int(input("Enter lower bound of your range: "))
