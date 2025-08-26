@@ -1,7 +1,11 @@
+from functools import update_wrapper
 import random
 
-computerNumber = random.randint(1, 100)
-userNumber = int(input("Guess a Number between 1 and 100 inclusive (You have 10 attempts left): "))
+lowerBound = int(input("Enter lower bound of your range: "))
+upperBound = int(input("Enter upper bound of your range: "))
+
+computerNumber = random.randint(lowerBound, upperBound)
+userNumber = int(input(f"Guess a Number between {lowerBound} and {upperBound} inclusive (You have 10 attempts left): "))
 attempts = 10
 won = False
 
