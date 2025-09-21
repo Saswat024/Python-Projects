@@ -26,5 +26,4 @@ while(attempts != 0):
     if attempts > 0:
         userNumber = int(input("Guess again: "))
     
-
 print(f"OOPS!! You have ran out of attempts. The number was {computerNumber}") if not won else ""
